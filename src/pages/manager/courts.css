@@ -1,0 +1,251 @@
+* {
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #c1a1d3;
+    height: 15vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo img {
+    float: left;
+    margin-top: -50px;
+}
+
+.nbar {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 3%;
+    left: 38%;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section {
+    background-color: #e7d9ea;
+    height: 500vh;
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    position: relative;
+    left: -100px;
+    top: 25px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    border: black;
+    outline: black;
+    margin-top: -10px;
+    margin-left: 10px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #666;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 110px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #666;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.filterDiv {
+    float: left;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    font-size: 80px;
+    line-height: 400px;
+    text-align: center;
+    background-color: #2196F3;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.bt {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -75px;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.bt:hover {
+    background-color: black;
+}
+
+.form-popup {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 50px 50px;
+    border: solid;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+}
+
+
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 5%;
+    left: 35%;
+    bottom: 1.25%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+/* Full-width input fields */
+
+.form-container input[type=text],
+.form-container input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type=text]:focus,
+.form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}

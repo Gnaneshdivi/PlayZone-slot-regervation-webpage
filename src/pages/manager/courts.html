@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All available courts</title>
+    <link rel="stylesheet" href="css/courts.css">
+</head>
+
+<body>
+    <header>
+        <div class="nbar">
+            <div class="logo">
+                <img src="l3.png">
+            </div>
+            <div class="title">
+                <h1>Take your pick</h1>
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div id="myBtnContainer">
+            <h2>Filter:</h2>
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('cricket')"> Cricket</button>
+            <button class="btn" onclick="filterSelection('basketball')"> Basketball</button>
+            <button class="btn" onclick="filterSelection('football')"> Football</button>
+            <button class="btn" onclick="filterSelection('swimming')"> Swimming</button>
+            <button class="btn" onclick="filterSelection('tennis')"> Tennis</button>
+            <button class="btn" onclick="filterSelection('tabletennis')"> Table Tennis</button>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Distance</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">0km-20km</a>
+                <a href="">40km</a>
+                <a href="">60km</a>
+                <a href="">80km</a>
+                <a href="">100km</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="filterDiv cricket" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(cc4.jpg); margin-left: 40px;">a
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv cricket football basketball" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(248, 245, 245, 0.11)), url(fb2.jpg); margin-left: 40px;">b
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv cricket basketball" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(bb1.jpg); margin-left: 40px;">c
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv basketball football" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(bb3.jpg); margin-left: 40px;">d
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv swimming" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(sp2.jpg); margin-left: 40px;">e
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv tabletennis swimming" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(tat1.jpg); margin-left: 40px;">f
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv tennis football" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(fb1.jpg); margin-left: 40px;">g
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv tabletennis tennis football" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(ta1.jpg); margin-left: 40px;">h
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv football" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(fb3.jpg); margin-left: 40px;">i
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv swimming" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(sp1.jpg); margin-left: 40px;">j
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv tabletennis tennis" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(ta2.jpg); margin-left: 40px;">k
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv cricket football" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(cc3.jpg); margin-left: 40px;">l
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv tennis" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(ta3.jpg); margin-left: 40px;">m
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv tabletennis" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(tat2.jpg); margin-left: 40px;">n
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv basketball football" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(bb4.jpg); margin-left: 40px;">o
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv cricket football basketball" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(cc2.jpg); margin-left: 40px;">p
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv football cricket" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(fb2.jpg); margin-left: 40px;">q
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv basketball tennis" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(ta3.jpg); margin-left: 40px;">r
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv tabletennis cricket" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(tat1.jpg); margin-left: 40px;">s
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="filterDiv cricket basketball tennis" style="background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(73, 70, 70, 0.363)), url(bb2.jpg); margin-left: 40px;">t
+                <button class="bt" onclick="openForm()">Book Now</button></div>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Book your slot</h1>
+
+                    <label for="name"><b>Full Name</b></label>
+                    <input type="text" placeholder=" Enter Full Name" name="name" required>
+
+                    <label for="number"><b>Phone Number</b></label>
+                    <input type="number" placeholder="Enter Number" name="number" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="court"><b>Court</b></label>
+                    <input list="courts" type="text" placeholder="Enter Court" name="court" required>
+                    <datalist id="courts" name="courts">
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                        <option value="d">d</option>
+                        <option value="e">e</option>
+                        <option value="f">f</option>
+                        <option value="g">g</option>
+                        <option value="h">h</option>
+                        <option value="i">i</option>
+                        <option value="j">j</option>
+                        <option value="k">k</option>
+                        <option value="l">l</option>
+                        <option value="m">m</option>
+                        <option value="n">n</option>
+                        <option value="o">o</option>
+                        <option value="p">p</option>
+                        <option value="q">q</option>
+                        <option value="r">r</option>
+                        <option value="s">s</option>
+                        <option value="t">t</option>
+                    </datalist>
+
+                    <label for="time"><b>Time slot</b></label>
+                    <input list="time" type="text" placeholder="Enter Time slot" name="time" required>
+                    <datalist id="time" name="time">
+                        <option value="6am-8am">6am-8am</option>
+                        <option value="9am-11am">9am-11am</option>
+                        <option value="1pm-3pm">1pm-3pm</option>
+                        <option value="4pm-6pm">4pm-6pm</option>
+                        <option value="7pm-9pm">7pm-9pm</option>
+                    </datalist>
+
+                    <label for="payment"><b>Payment</b></label>
+                    <input list="payment" type="text" placeholder="Enter Payment method" name="payment" required>
+                    <datalist id="payment" name="payment">
+                        <option value="credit/debit card">credit/debit card</option>
+                        <option value="net banking">net banking</option>
+                        <option value="UPI">UPI</option>
+                    </datalist>
+
+                    <button type="submit" class="btn">Book now</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            filterSelection("all")
+
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                        element.className += " " + arr2[i];
+                    }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </section>
+</body>
+
+</html>

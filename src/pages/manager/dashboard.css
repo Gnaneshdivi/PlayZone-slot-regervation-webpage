@@ -1,0 +1,394 @@
+    * {
+        margin: 0%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(248, 245, 245, 0.11)), url("../assets/ff.jpg");
+        height: 80vh;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    ul {
+        margin: 20px;
+        float: right;
+        list-style-type: none;
+    }
+    
+    ul li {
+        display: inline-block;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+        padding: 10px 15px;
+        overflow: hidden;
+    }
+    
+    ul li a:hover {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .logo img {
+        float: left;
+        margin-top: -50px;
+    }
+    
+    .nbar {
+        max-width: 1500px;
+        margin: auto;
+    }
+    
+    .title {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+    
+    .title h1 {
+        font-size: 70px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+    
+    .title h3 {
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        text-align-last: right;
+    }
+    
+    ol {
+        margin: 10px;
+        float: left;
+        list-style-type: none;
+    }
+    
+    .fa {
+        padding: 20px;
+        position: relative;
+        left: -200px;
+        color:white;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook-square {
+        margin-top: 300px;
+    }
+    
+    h2 {
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration-color: whitesmoke;
+        text-align: center;
+        padding-left: 30px;
+        padding-top: 40px;
+        text-shadow: 2px 2px 5px black;
+    }
+    
+    ol.sport {
+        margin-top: 40px;
+        float: left;
+        list-style-type: none;
+        position: relative;
+    }
+    
+    .MultiCarousel {
+        float: left;
+        overflow: hidden;
+        padding: 15px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .MultiCarousel .MultiCarousel-inner {
+        transition: 1s ease all;
+        float: left;
+    }
+    
+    .MultiCarousel .MultiCarousel-inner .item {
+        float: left;
+    }
+    
+    .MultiCarousel .MultiCarousel-inner .item>div {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        background: #f1f1f1;
+        color: #666;
+    }
+    
+    .MultiCarousel .leftLst,
+    .MultiCarousel .rightLst {
+        position: absolute;
+        border-radius: 50%;
+        top: calc(50% - 20px);
+    }
+    
+    .MultiCarousel .leftLst {
+        left: 0;
+    }
+    
+    .MultiCarousel .rightLst {
+        right: 0;
+    }
+    
+    .MultiCarousel .leftLst.over,
+    .MultiCarousel .rightLst.over {
+        pointer-events: none;
+        background: #ccc;
+    }
+    
+    h5 {
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration-color: rgba(0, 0, 0, 0.486);
+        text-align: center;
+        padding-left: 30px;
+        padding-top: 30px;
+        text-shadow: 2px 2px 5px whitesmoke;
+    }
+    
+    section.blogsnstories {
+        background-color: azure;
+        height: 110vh;
+    }
+    
+     :root {
+        --bgColor: #13003c;
+        --txtColor: #ffffff;
+        --primary: #d051e4;
+        --secondary: #8f2e9e;
+        --triatery: #623fab;
+    }
+    
+    body {
+        background: var(--bgColor);
+        font-family: "Inter", sans-serif;
+        color: var(--txtColor);
+    }
+    
+    .card {
+        background-color: var(--txtColor);
+        color: var(--bgColor);
+        width: 350px;
+        max-width: 80vw;
+        padding: 16px;
+        padding-bottom: 24px;
+        border-bottom: 4px solid var(--primary);
+        border-radius: 4px;
+        align-self: stretch;
+        margin: 3vh;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 1px solid #bebebe;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    
+    .card p {
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .card a {
+        text-decoration: none;
+    }
+    
+    .card>a {
+        background-color: var(--primary);
+        color: var(--txtColor);
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: box-shadow 200ms ease-in-out 0s;
+        box-shadow: 0 0 0 0 rgb(208, 0, 0), 0 0 0 0 rgba(255, 183, 28, 0.6) inset, 0 0 0 0 rgb(0, 0, 228), 0 0 0 0 rgb(23, 149, 233) inset;
+    }
+    
+     ::selection {
+        background-color: var(--triatery);
+        color: var(--txtColor);
+    }
+    
+    .card:nth-of-type(2) {
+        border-color: var(--secondary);
+    }
+    
+    .card:nth-of-type(3) {
+        border-color: var(--triatery);
+    }
+    
+    .card:nth-of-type(2)>a {
+        background-color: var(--secondary);
+        box-shadow: 0 0 0 0 rgb(143, 0, 0), 0 0 0 0 rgba(255, 183, 28, 0.6) inset, 0 0 0 0 rgb(0, 0, 158), 0 0 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .card:nth-of-type(3)>a {
+        background-color: var(--triatery);
+        box-shadow: 0 0 0 0 rgb(98, 0, 0), 0 0 0 0 rgba(255, 183, 28, 0.6) inset, 0 0 0 0 rgb(0, 0, 171), 0 0 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .card:nth-of-type(3)>a:hover {
+        box-shadow: 4px 4px 0 0 rgb(98, 0, 0), -4px -4px 0 0 rgba(255, 183, 28, 0.6) inset, -4px -4px 0 0 rgb(0, 0, 171), 4px 4px 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .card:nth-of-type(2)>a:hover {
+        box-shadow: 4px 4px 0 0 rgb(143, 0, 0), -4px -4px 0 0 rgba(255, 183, 28, 0.6) inset, -4px -4px 0 0 rgb(0, 0, 158), 4px 4px 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .card:nth-of-type(2)>a:active {
+        box-shadow: 2px 2px 0 0 rgb(143, 0, 0), -2px -2px 0 0 rgba(255, 183, 28, 0.6) inset, -2px -2px 0 0 rgb(0, 0, 158), 2px 2px 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .card:nth-of-type(3)>a:active {
+        box-shadow: 2px 2px 0 0 rgb(98, 0, 0), -2px -2px 0 0 rgba(255, 183, 28, 0.6) inset, -2px -2px 0 0 rgb(0, 0, 171), 2px 2px 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .card>a:hover {
+        box-shadow: 4px 4px 0 0 rgb(208, 0, 0), -4px -4px 0 0 rgba(255, 183, 28, 0.6) inset, -4px -4px 0 0 rgb(0, 0, 228), 4px 4px 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .card>a:active {
+        outline: none;
+        box-shadow: 2px 2px 0 0 rgb(208, 0, 0), -2px -2px 0 0 rgba(255, 183, 28, 0.6) inset, -2px -2px 0 0 rgb(0, 0, 228), 2px 2px 0 0 rgb(23, 149, 233) inset;
+    }
+    
+    .labels span {
+        font-size: 0.8em;
+        background-color: #dedfe4;
+        color: #333333;
+        padding: 4px 16px;
+        margin-left: 4px;
+        border-radius: 999px;
+        pointer-events: none;
+    }
+    
+    .card .spacer {
+        flex-grow: 1;
+    }
+    
+    .labels span::after {
+        content: attr(data);
+    }
+    
+    .vflex,
+    .hflex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .vflex {
+        flex-direction: column;
+    }
+    
+    .justified {
+        justify-content: space-evenly;
+        align-content: flex-start;
+        /*   gap: 16px;
+        margin-top: 3vh; */
+    }
+    
+    .card .hflex {
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 900px) {
+        .justified {
+            flex-direction: column;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Float four columns side by side */
+    
+    .column {
+        float: left;
+        position: relative;
+        width: 30%;
+        padding: 0 50px;
+    }
+    /* Remove extra left and right margins, due to padding in columns */
+    
+    .row {
+        margin: 0 -5px;
+    }
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the counter cards */
+    
+    .card2 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        /* this adds the "card" effect */
+        padding: 20px;
+        margin-left: 20%;
+        margin-top: 10%;
+        height: 80vh;
+        text-align: center;
+        background-color: #f1f1f1;
+    }
+    
+    .btn btn-primary {
+        background-color: rgb(73, 17, 226);
+        color: white;
+        padding: 50px 50px;
+        border: solid;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+    }
+    /* Responsive columns - one column layout (vertical) on small screens */
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            position: relative;
+        }
+    }
+    
+    .about {
+        text-decoration-color: whitesmoke;
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    
+    .contact {
+        text-decoration-color: whitesmoke;
+        text-align: left;
+        padding-left: 200px;
+        padding-top: 70px;
+    }

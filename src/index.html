@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  <script>
+    //Append the download function here
+    fetch("http://localhost:3000/userlogin", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "id": "abc@gmail.com",
+        "password": "1234"
+      }),
+    })
+      .then((response) => response.json())
+      .then((res) => { console.log(res.message[0].password) });
+
+  </script>
+
+</body>
+
+</html>
+
+
+<!--
+  for login
+  fetch("http://localhost:3000/userlogin", {
+              method: "POST",
+              headers: {
+        "Content-Type": "application/json",
+      },
+              body:JSON.stringify({
+    "id":"abc@gmail.com",
+    "password":"1234"
+}),
+            })
+              .then((response) => response.json())
+              .then((res) => {console.log(res.message[0].password)});
+          
+-->

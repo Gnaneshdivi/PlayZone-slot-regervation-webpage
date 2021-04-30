@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>PLay</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./stylem.css">
+
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="container right-panel-active">
+		<!-- Sign Up -->
+		<div class="container__form container--signup">
+			<form class="form" id="form1">
+				<h2 class="form__title">Sign Up</h2>
+				<input type="text" placeholder="User Name" class="input" id="sn" name="name" />
+				<input type="email" placeholder="Email" class="input" id="se" name="id" />
+				<input type="password" placeholder="Password" class="input" id="sp" name="password" />
+				<input type="text" placeholder="Phone number" class="input" id="s" name="phone" />
+				<input type="text" placeholder="Address" class="input" id="ad" name="add" />
+				<button class="btn" id="su" type="button">Sign Up</button>
+			</form>
+		</div>
+
+		<!-- Sign In -->
+		<div class="container__form container--signin">
+			<form class="form" id="form2">
+				<h2 class="form__title">Sign In</h2>
+				<input type="email" placeholder="Email" class="input" id='e1' />
+				<input type="password" placeholder="Password" class="input" id='p1' />
+				<a href="#" class="link">Forgot your password?</a>
+				<button class="btn" id="si" type="button">Sign In</button>
+			</form>
+		</div>
+
+		<!-- Overlay -->
+		<div class="container__overlay">
+			<div class="overlay">
+				<div class="overlay__panel overlay--left">
+					<button class="btn" id="signIn">Sign In</button>
+				</div>
+				<div class="overlay__panel overlay--right">
+					<button class="btn" id="signup">Sign Up</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- partial -->
+
+	<script>
+
+
+		const signInBtn = document.getElementById("signIn");
+		const signUpBtn = document.getElementById("signup");
+		const si = document.getElementById("si");
+		const su = document.getElementById("su");
+		const container = document.querySelector(".container");
+
+
+		signInBtn.addEventListener("click", () => {
+			container.classList.remove("right-panel-active");
+		});
+
+		signUpBtn.addEventListener("click", () => {
+
+			container.classList.add("right-panel-active");
+
+		});
+		si.addEventListener("click", () => {
+			login();
+		});
+		su.addEventListener("click", () => {
+
+			signup();
+		});
+
+
+
+		function signup() {
+			na = document.getElementById('sn').value;
+			mail = document.getElementById('se').value;
+			password = document.getElementById('sp').value;
+			phone = document.getElementById('s').value;
+			add = document.getElementById('ad').value;
+			fetch("http://localhost:3000/msignup", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					"name": na,
+					"id": mail,
+					"password": password,
+					"phone": phone,
+					"address": add,
+				}),
+			})
+				.then((response) => response.json())
+				.then((res) => {
+					console.log(res.message);
+					if (res.message == true) {
+						window.location = 'mdahboard.html'
+					}
+				});
+
+
+
+		}
+		function login() {
+			mail = document.getElementById('e1').value;
+			password = document.getElementById('p1').value;
+			fetch("http://localhost:3000/mlogin", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					"id": mail,
+					"password": password,
+				}),
+			})
+				.then((response) => response.json())
+				.then((res) => {
+					console.log(res.message[0].password);
+					if (res.message[0].password == password) {
+						window.location = 'mdashboard.html'
+					}
+					else {
+						window.location = 'mlogin.html'
+					}
+				});
+		}
+	</script>
+
+
+
+</body>
+
+</html>
